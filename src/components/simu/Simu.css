@@ -1,0 +1,49 @@
+.simu{
+    width: 400px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 250px 150px;
+    margin: 20px 10px 20px 10px;
+    background-color: white;
+    box-shadow:0 0 8px 0 rgb(0 0 0 / 8%), 0px 0 11px 0 rgb(0 0 0 / 19%);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.simu:hover{
+    transform: scale(0.98);
+    box-shadow:0 0 8px 0 rgb(0 0 0 / 8%), 0px 0 11px 0 rgba(0, 0, 0, 0.13);
+}
+
+.simuCard{
+    width: 100%;
+    height: 100%;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+}
+
+.simuTitle{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: start;
+    margin-top: 10px;
+}
+
+.simuSections{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.simuSections p{
+    font-size: 10px;
+    font-weight: 600;
+    text-align: start;
+}
