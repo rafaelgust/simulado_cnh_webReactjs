@@ -5,15 +5,17 @@ import qrcodeImg from  "../images/qr.png"
 import googleplayImg from  "../images/googleplay.png"
 import { Button } from "./button/Button";
 
+import { Link } from "react-router-dom";
+
 class Header extends React.Component{
     render(){
         return(
             <div className="header">
                 <div className="navHeader">
-                    <img src={iconSite} alt="Logo Simulado CNH" width="60" height="60" />
+                    <Link to="/"><img src={iconSite} alt="Logo Simulado CNH" width="60" height="60" /></Link>
                     <div className="buttonsNav">
-                        <Button onClick={() => {console.log('foi1')}} buttonStyle="btn--primary" buttonSize="btn--medium">Política de Privacidade e Cookies</Button>
-                        <Button onClick={() => {console.log('foi2')}} buttonStyle="btn--primary" buttonSize="btn--medium">Fale Conosco</Button>
+                    <Link to="/policy"><Button buttonStyle="btn--primary" buttonSize="btn--medium">Política de Privacidade e Cookies</Button></Link>
+                    <Link to="/contact"><Button buttonStyle="btn--primary" buttonSize="btn--medium">Fale Conosco</Button></Link>
                     </div>
                 </div>
                 <div className="animHeader">
