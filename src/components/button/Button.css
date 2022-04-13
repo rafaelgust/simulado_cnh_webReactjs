@@ -20,7 +20,7 @@
 
 .btn:hover{
     transform: scale(0.9);
-    box-shadow: 0 0 16px 0px rgb(249 249 249 / 32%);
+    box-shadow: 0 0 16px 0px rgb(129 9 66 / 68%);
 }
 
 .btn--primary{
