@@ -14,7 +14,7 @@ class Header extends React.Component{
                 <div className="navHeader">
                     <Link to="/"><img src={iconSite} alt="Logo Simulado CNH" width="60" height="60" /></Link>
                     <div className="buttonsNav">
-                    <Link to="/policy"><Button buttonStyle="btn--primary" buttonSize="btn--medium">Política de Privacidade e Cookies</Button></Link>
+                    <Link to="/policy"><Button buttonStyle="btn--primary" buttonSize="btn--medium">Política de Privacidade e Termos</Button></Link>
                     <Link to="/contact"><Button buttonStyle="btn--primary" buttonSize="btn--medium">Fale Conosco</Button></Link>
                     </div>
                 </div>
