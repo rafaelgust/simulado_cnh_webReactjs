@@ -1,7 +1,7 @@
 import React from "react";
 import { Simu } from "./simu/Simu";
 
-class Article extends React.Component{
+class Base extends React.Component{
     render(){
         return(
             <div className="article">
@@ -16,4 +16,4 @@ class Article extends React.Component{
         );
     }
 }
-export default Article;
+export default Base;

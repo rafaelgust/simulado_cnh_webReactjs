@@ -1,5 +1,7 @@
 import Header from "./components/Header";
-import Article from "./components/Article"
+import Base from "./components/Base"
+import Contact from "./components/Contact"
+import Policy from "./components/Policy"
 import Footer from "./components/Footer"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -9,9 +11,9 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Article/>} />
-        <Route exact path="/contact" element={<div>Contato</div>} />
-        <Route exact path="/policy" element={<div>Contato</div>} />
+        <Route exact path="/" element={<Base/>} />
+        <Route exact path="/contact" element={<Contact/>} />
+        <Route exact path="/policy" element={<Policy/>} />
       </Routes>
       <Footer />
     </Router>
