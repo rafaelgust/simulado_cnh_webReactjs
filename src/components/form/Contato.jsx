@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './Contato.css';
 
 function ContatoForm() {
     const [name, setName] = useState("");
@@ -7,24 +8,27 @@ function ContatoForm() {
   
     const handleSubmit = (event) => {
       event.preventDefault();
-      alert(`The name you entered was: ${name}`)
+      alert(`The name you entered was: ${name} ${email} ${text}`)
     }
   
     return (
       <form onSubmit={handleSubmit}>
         <label>
             <input 
-            type="text" 
+            type="text"
+            placeholder="Nome"
             value={name}
             onChange={(e) => setName(e.target.value)}
             />
             <input 
-            type="text" 
+            type="text"
+            placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             />
             <textarea 
-            value={text} 
+            placeholder="Mensagem"
+            value={text}
             onChange={(e) => setText(e.target.value)} 
             />
           </label>
