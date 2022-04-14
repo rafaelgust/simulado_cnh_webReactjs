@@ -1,36 +1,37 @@
-import React from "react";
+import { useState } from "react";
 
-class ContatoForm extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        value: 'Por favor, escreva uma dissertação sobre o seu elemento DOM favorito.'
-      };
+function ContatoForm() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [text, setText] = useState("");
   
-      this.handleChange = this.handleChange.bind(this);
-      this.handleSubmit = this.handleSubmit.bind(this);
-    }
-  
-    handleChange(event) {
-      this.setState({value: event.target.value});
-    }
-  
-    handleSubmit(event) {
-      alert('Uma dissertação foi enviada: ' + this.state.value);
+    const handleSubmit = (event) => {
       event.preventDefault();
+      alert(`The name you entered was: ${name}`)
     }
   
-    render() {
-      return (
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Dissertação:
-            <textarea value={this.state.value} onChange={this.handleChange} />
+    return (
+      <form onSubmit={handleSubmit}>
+        <label>
+            <input 
+            type="text" 
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            />
+            <input 
+            type="text" 
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            />
+            <textarea 
+            value={text} 
+            onChange={(e) => setText(e.target.value)} 
+            />
           </label>
-          <input type="submit" value="Enviar" />
-        </form>
-      );
-    }
+        <input type="submit" />
+      </form>
+    )
   }
+  
 
   export default ContatoForm;
