@@ -126,15 +126,9 @@ code {
 }
 
 .policyContainer{
-  width: 825px;
-  background-color: #f7f7f7;
   margin-top: 95px;
   margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 10px 20px 10px 20px;
-  box-shadow: 2px 4px 8px 0px rgb(0 0 0 / 22%);
-  border-radius: 20px;
 }
 
 .policyContainer h2{
@@ -146,6 +140,13 @@ code {
 .policyContainer p{
   color: #626262;
   margin: 5px 0 15px;
+}
+
+.contactContainer{
+  height: 400px;
+  margin-top: 120px;
+  margin-bottom: 95px;
+  padding: 10px 20px 10px 20px;
 }
 
 @media only screen and (max-width: 435px) {
@@ -182,11 +183,37 @@ code {
   .sections{
     grid-auto-rows: auto auto;
   }
+  .policyContainer{
+    width: 90%;
+    padding: 10px 20px 10px 20px;
+  }
+  .contactContainer{
+    width: 90%;
+    padding: 10px 20px 10px 20px;
+  }
 }
 
 @media only screen and (min-width: 800px) {
   .sections{
     grid-template-columns: auto auto;
+  }
+  .policyContainer{
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px 10px 20px;
+    background-color: #f7f7f7;
+    box-shadow: 2px 4px 8px 0px rgb(0 0 0 / 22%);
+    border-radius: 20px;
+  }
+  .contactContainer{
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px 10px 20px;
+    background-color: #f7f7f7;
+    box-shadow: 2px 4px 8px 0px rgb(0 0 0 / 22%);
+    border-radius: 20px;
   }
 }
 
