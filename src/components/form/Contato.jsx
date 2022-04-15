@@ -6,14 +6,33 @@ function ContatoForm() {
     const [email, setEmail] = useState("");
     const [text, setText] = useState("");
   
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      alert(`The name you entered was: ${name} ${email} ${text}`)
-    }
+    let handleSubmit = async (e) => {
+      e.preventDefault();
+      try {
+        let res = await fetch("/api/cnh/sendmail", {
+          method: "POST",
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            text: text,
+          }),
+        });
+        if (res.status === 200) {
+          setName("");
+          setEmail("");
+          setText("");
+        } else {
+          setText("Falhou");
+        }
+      } catch (err) {
+        console.log(err);
+      }
+    };
   
     return (
       <form onSubmit={handleSubmit}>
         <label>
+            <h2>Contato</h2>
             <input 
             type="text"
             placeholder="Nome"
