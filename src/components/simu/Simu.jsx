@@ -87,9 +87,6 @@ export const Simu = () => {
             </button>
          )
        })}
-      </div>
-        
-
-          
+      </div>  
     );
 }

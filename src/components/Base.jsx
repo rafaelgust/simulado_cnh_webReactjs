@@ -1,5 +1,6 @@
 import React from "react";
 import { Simu } from "./simu/Simu";
+import { Tuto } from "./tutorial/Tuto";
 
 class Base extends React.Component{
     render(){
@@ -10,7 +11,9 @@ class Base extends React.Component{
                     <dir className="simuContent">
                         <Simu />
                     </dir>
-                    <div className="simuTuto"></div>
+                    <div className="simuTuto">
+                        <Tuto />
+                    </div>
                 </div>
             </div>
         );
