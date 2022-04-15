@@ -21,8 +21,9 @@ function ContatoForm() {
           setName("");
           setEmail("");
           setText("");
+          alert('Enviado com Sucesso!');
         } else {
-          setText("Falhou");
+          alert('Falha ao enviar... Verifique os campos!');
         }
       } catch (err) {
         console.log(err);
