@@ -1,0 +1,23 @@
+.containerTuto{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+}
+.tutoBase{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center
+}
+.tutoBase img{
+    height: 200px;
+}
+
+.tutoBase p{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
