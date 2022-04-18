@@ -11,18 +11,27 @@ export const Tuto = () => {
                 <img src={Img1} alt="IMG Tutorial 1" />
                 <div>
                     <p>Escolha</p>
+                    <p>o simulado</p>
                 </div>
             </div>
             <div className="tutoBase">
                 <img src={Img2} alt="IMG Tutorial 2" />
                 <div>
-                    <p>Escolha</p>
+                    <p>Avance e Retorne</p>
+                    <br />
+                    <p style={{ fontSize: "12px" }}>Pelos cubos superiores</p>
+                    <p style={{ fontSize: "12px" }}>Pelos botões</p>
+                    <p style={{ fontSize: "12px" }}>Pelo Touch</p>
+                    <p style={{ fontSize: "12px" }}>Pelo Cartão de Resposta</p>
                 </div>
             </div>
             <div className="tutoBase">
                 <img src={Img3} alt="IMG Tutorial 3" />
                 <div>
-                    <p>Escolha</p>
+                    <p>Ao concluir</p>
+                    <br />
+                    <p style={{ fontSize: "12px" }}>Será redirecionado para o cartão de resposta, onde poderá conferir sua pontuação!</p>
+                    <p style={{ fontSize: "12px" }}>Para acessar as alternativas, retorne ou escolha a alternativa no bloco superior</p>
                 </div>
             </div>
         </div>  
