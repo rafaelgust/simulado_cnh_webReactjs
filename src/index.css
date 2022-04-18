@@ -133,15 +133,24 @@ code {
   width: 100%;
   height: 100%;
   display: flex;
+  gap: 10px;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  justify-content: end;
   background-color: #644051;
+}
+
+.footerPry p {
+  font-size: 10px;
+  margin-bottom: 10px;
 }
 
 .footerSec{
   padding: 15px;
+}
+
+.footerSec p {
+  font-size: 12px;
 }
 
 .policyContainer{

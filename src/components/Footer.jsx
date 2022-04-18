@@ -7,11 +7,11 @@ class Footer extends React.Component{
         return(
             <div className="footer">
                 <div className="footerPry">
-                    <p>Possuímos caráter meramente informativo e não temos ligação com nenhum órgão público.</p>
                     <div>  
                         <Link to="/policy"><Button buttonStyle="btn--primary" buttonSize="btn--medium">Política de Privacidade e Termos</Button></Link>
                         <Link to="/contact"><Button buttonStyle="btn--primary" buttonSize="btn--medium">Fale Conosco</Button></Link>
                     </div>
+                    <p>Possuímos caráter meramente informativo e não temos ligação com nenhum órgão público.</p>
                 </div>
                 <div className="footerSec">
                     <p>© 2021 Gust</p>
